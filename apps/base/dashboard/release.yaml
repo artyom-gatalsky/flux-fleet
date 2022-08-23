@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: dashboard
         namespace: flux-system
-  interval: 30m
+  interval: 5m
   install:
     remediation:
       retries: 3
