@@ -1,0 +1,23 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: dashboard
+  namespace: kube-system
+spec:
+  releaseName: dashboard
+  chart:
+    spec:
+      chart: kubernetes-dashboard
+      sourceRef:
+        kind: HelmRepository
+        name: dashboard
+        namespace: flux-system
+  interval: 30m
+  install:
+    remediation:
+      retries: 3
+  values:
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx
