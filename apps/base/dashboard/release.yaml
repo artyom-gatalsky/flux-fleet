@@ -17,6 +17,9 @@ spec:
     remediation:
       retries: 3
   values:
+    protocolHttp: true
+    extraArgs:
+      - --enable-insecure-login=true
     service:
       externalPort: 80
     ingress:
