@@ -10,4 +10,4 @@ spec:
   values:
     ingress:
       hosts:
-        - host: dashboard.prod
+        - dashboard.prod

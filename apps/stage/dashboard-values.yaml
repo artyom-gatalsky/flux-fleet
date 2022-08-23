@@ -10,4 +10,4 @@ spec:
   values:
     ingress:
       hosts:
-        - host: dashboard.stage
+        - dashboard.stage
