@@ -7,3 +7,7 @@ spec:
   chart:
     spec:
       version: ">=5.8.0"
+  values:
+    ingress:
+      hosts:
+        - dashboard.prod
