@@ -20,3 +20,5 @@ spec:
     ingress:
       hosts:
         - host: foobar.prod.local
+          paths:
+            - /
