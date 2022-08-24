@@ -17,4 +17,5 @@ spec:
       hosts:
         - host: foobar.stage.local
           paths:
-            - /
+            - path: /
+              pathType: ImplementationSpecific

@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      version: ">=1.0.0"
+      version: "1.0.0"
   values:
     autoscaling:
       enabled: true
@@ -21,4 +21,5 @@ spec:
       hosts:
         - host: foobar.prod.local
           paths:
-            - /
+            - path: /
+              pathType: ImplementationSpecific
