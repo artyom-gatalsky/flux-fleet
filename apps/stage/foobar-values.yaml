@@ -1,0 +1,15 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: foobar
+  namespace: foobar
+spec:
+  chart:
+    spec:
+      version: ">=0.1.0-alpha"
+  values:
+    replicaCount: 2
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
